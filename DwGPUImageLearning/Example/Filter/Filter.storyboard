@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zCO-fN-Ly1">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="eDW-d3-xvI">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -223,6 +223,94 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FsI-oh-iAx" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1067" y="70"/>
+        </scene>
+        <!--Master-->
+        <scene sceneID="gWa-Rh-4Zv">
+            <objects>
+                <tableViewController title="Master" clearsSelectionOnViewWillAppear="NO" id="eDW-d3-xvI" customClass="InnerFilterIndexViewController" customModule="DwGPUImageLearning" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="u6X-nR-9Ia">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="WWN-s7-hhJ" style="IBUITableViewCellStyleDefault" id="0HA-BD-nCw">
+                                <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0HA-BD-nCw" id="Lhj-D9-Hq6">
+                                    <rect key="frame" x="0.0" y="0.0" width="383" height="44"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="WWN-s7-hhJ">
+                                            <rect key="frame" x="20" y="0.0" width="355" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <segue destination="vHy-0u-5IO" kind="push" identifier="showDetail" id="zpe-RI-r6h"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <sections/>
+                        <connections>
+                            <outlet property="dataSource" destination="eDW-d3-xvI" id="dCv-LP-r4N"/>
+                            <outlet property="delegate" destination="eDW-d3-xvI" id="uHS-dt-PEd"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Filters" id="fvp-vM-mMe"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="M1x-2H-dgK" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="265" y="910"/>
+        </scene>
+        <!--Inner Filter Display View Controller-->
+        <scene sceneID="SQx-u1-sxT">
+            <objects>
+                <viewController id="vHy-0u-5IO" customClass="InnerFilterDisplayViewController" customModule="DwGPUImageLearning" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Igs-xM-Tot"/>
+                        <viewControllerLayoutGuide type="bottom" id="MCq-Im-ur2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="iWp-U5-96i">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" preservesSuperviewLayoutMargins="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zPn-gK-Idw" customClass="RenderView" customModule="GPUImage">
+                                <rect key="frame" x="0.0" y="8" width="414" height="800"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="AoY-og-kWn">
+                                <rect key="frame" x="39.5" y="758" width="335" height="31"/>
+                                <connections>
+                                    <action selector="valChangeAction:" destination="vHy-0u-5IO" eventType="valueChanged" id="djK-EC-UJH"/>
+                                </connections>
+                            </slider>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="zPn-gK-Idw" firstAttribute="top" secondItem="Igs-xM-Tot" secondAttribute="bottom" constant="8" symbolic="YES" id="Q0t-Z1-qTi"/>
+                            <constraint firstAttribute="trailing" secondItem="zPn-gK-Idw" secondAttribute="trailing" id="QxR-3W-SOa"/>
+                            <constraint firstItem="AoY-og-kWn" firstAttribute="bottom" secondItem="Pk8-W4-C4j" secondAttribute="bottom" constant="-20" id="VPG-eU-WdT"/>
+                            <constraint firstItem="AoY-og-kWn" firstAttribute="centerX" secondItem="Pk8-W4-C4j" secondAttribute="centerX" id="Vk3-6h-WuR"/>
+                            <constraint firstItem="zPn-gK-Idw" firstAttribute="bottom" secondItem="MCq-Im-ur2" secondAttribute="top" id="cpV-Jd-SMf"/>
+                            <constraint firstItem="zPn-gK-Idw" firstAttribute="leading" secondItem="iWp-U5-96i" secondAttribute="leading" id="kue-zc-6Lg"/>
+                            <constraint firstItem="AoY-og-kWn" firstAttribute="width" secondItem="iWp-U5-96i" secondAttribute="width" multiplier="0.8" id="kwC-El-hV3"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Pk8-W4-C4j"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="g79-8r-qEO"/>
+                    <connections>
+                        <outlet property="filterSlider" destination="AoY-og-kWn" id="0la-qW-BoF"/>
+                        <outlet property="renderView" destination="zPn-gK-Idw" id="dkr-gY-aeZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="T2T-x2-vhD" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1067" y="909"/>
         </scene>
     </scenes>
 </document>

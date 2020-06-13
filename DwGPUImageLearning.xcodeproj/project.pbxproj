@@ -19,6 +19,11 @@
 		A6D348F124951AE900BFF9EA /* DwFilterAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D348F024951AE900BFF9EA /* DwFilterAdapter.swift */; };
 		A6D348F324951F2300BFF9EA /* BrightnessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D348F224951F2300BFF9EA /* BrightnessViewController.swift */; };
 		A6D348F52495201A00BFF9EA /* ExposureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D348F42495201A00BFF9EA /* ExposureViewController.swift */; };
+		A6D348F82495221700BFF9EA /* StillCamera.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6D348F72495221700BFF9EA /* StillCamera.storyboard */; };
+		A6D348FA249522E200BFF9EA /* StillCameraToLibaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D348F9249522E200BFF9EA /* StillCameraToLibaryViewController.swift */; };
+		A6D349012495244C00BFF9EA /* filterOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D349002495244C00BFF9EA /* filterOperations.swift */; };
+		A6D349032495249400BFF9EA /* InnerFilterIndexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D349022495249400BFF9EA /* InnerFilterIndexViewController.swift */; };
+		A6D34905249524E500BFF9EA /* InnerFilterDisplayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D34904249524E500BFF9EA /* InnerFilterDisplayViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +93,11 @@
 		A6D348F024951AE900BFF9EA /* DwFilterAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DwFilterAdapter.swift; sourceTree = "<group>"; };
 		A6D348F224951F2300BFF9EA /* BrightnessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrightnessViewController.swift; sourceTree = "<group>"; };
 		A6D348F42495201A00BFF9EA /* ExposureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExposureViewController.swift; sourceTree = "<group>"; };
+		A6D348F72495221700BFF9EA /* StillCamera.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StillCamera.storyboard; sourceTree = "<group>"; };
+		A6D348F9249522E200BFF9EA /* StillCameraToLibaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StillCameraToLibaryViewController.swift; sourceTree = "<group>"; };
+		A6D349002495244C00BFF9EA /* filterOperations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = filterOperations.swift; sourceTree = "<group>"; };
+		A6D349022495249400BFF9EA /* InnerFilterIndexViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InnerFilterIndexViewController.swift; sourceTree = "<group>"; };
+		A6D34904249524E500BFF9EA /* InnerFilterDisplayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InnerFilterDisplayViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +174,7 @@
 		A6D348E92494DBD000BFF9EA /* Example */ = {
 			isa = PBXGroup;
 			children = (
+				A6D348F6249521FE00BFF9EA /* StillCamera */,
 				A6D348EA2494DBE800BFF9EA /* Filter */,
 			);
 			path = Example;
@@ -172,6 +183,8 @@
 		A6D348EA2494DBE800BFF9EA /* Filter */ = {
 			isa = PBXGroup;
 			children = (
+				A6D349022495249400BFF9EA /* InnerFilterIndexViewController.swift */,
+				A6D34904249524E500BFF9EA /* InnerFilterDisplayViewController.swift */,
 				A6D3417D249488A200BFF9EA /* SepiaToneViewController.swift */,
 				A6D348ED2495186900BFF9EA /* Filter.storyboard */,
 				A6D348F224951F2300BFF9EA /* BrightnessViewController.swift */,
@@ -184,8 +197,18 @@
 			isa = PBXGroup;
 			children = (
 				A6D348F024951AE900BFF9EA /* DwFilterAdapter.swift */,
+				A6D349002495244C00BFF9EA /* filterOperations.swift */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		A6D348F6249521FE00BFF9EA /* StillCamera */ = {
+			isa = PBXGroup;
+			children = (
+				A6D348F72495221700BFF9EA /* StillCamera.storyboard */,
+				A6D348F9249522E200BFF9EA /* StillCameraToLibaryViewController.swift */,
+			);
+			path = StillCamera;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -288,6 +311,7 @@
 				A6D34186249488A500BFF9EA /* LaunchScreen.storyboard in Resources */,
 				A6D34183249488A500BFF9EA /* Assets.xcassets in Resources */,
 				A6D348EE2495186900BFF9EA /* Filter.storyboard in Resources */,
+				A6D348F82495221700BFF9EA /* StillCamera.storyboard in Resources */,
 				A6D348E82494D46F00BFF9EA /* fanqie.jpg in Resources */,
 				A6D34181249488A200BFF9EA /* Main.storyboard in Resources */,
 			);
@@ -300,8 +324,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6D34905249524E500BFF9EA /* InnerFilterDisplayViewController.swift in Sources */,
 				A6D3417E249488A200BFF9EA /* SepiaToneViewController.swift in Sources */,
+				A6D349032495249400BFF9EA /* InnerFilterIndexViewController.swift in Sources */,
 				A6D3417A249488A200BFF9EA /* AppDelegate.swift in Sources */,
+				A6D348FA249522E200BFF9EA /* StillCameraToLibaryViewController.swift in Sources */,
+				A6D349012495244C00BFF9EA /* filterOperations.swift in Sources */,
 				A6D348F124951AE900BFF9EA /* DwFilterAdapter.swift in Sources */,
 				A6D348F52495201A00BFF9EA /* ExposureViewController.swift in Sources */,
 				A6D3417C249488A200BFF9EA /* SceneDelegate.swift in Sources */,
