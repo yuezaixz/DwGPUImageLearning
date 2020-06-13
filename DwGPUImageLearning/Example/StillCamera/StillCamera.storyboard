@@ -71,13 +71,31 @@
         <scene sceneID="hQm-16-ZTw">
             <objects>
                 <viewController id="uXF-bN-Ck4" customClass="StillCameraToLibaryViewController" customModule="DwGPUImageLearning" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="vW3-AU-hgL">
+                    <view key="view" contentMode="scaleToFill" id="vW3-AU-hgL" customClass="RenderView" customModule="GPUImage">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="goe-7U-yBG">
+                                <rect key="frame" x="156" y="772" width="102" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="保存到相册"/>
+                                <connections>
+                                    <action selector="saveToLibaryAction:" destination="uXF-bN-Ck4" eventType="touchUpInside" id="90P-iL-Lco"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="goe-7U-yBG" firstAttribute="bottom" secondItem="eFu-e4-fXN" secondAttribute="bottom" id="C6B-ba-fDz"/>
+                            <constraint firstItem="goe-7U-yBG" firstAttribute="centerX" secondItem="vW3-AU-hgL" secondAttribute="centerX" id="Fp3-JG-JYo"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="eFu-e4-fXN"/>
                     </view>
                     <navigationItem key="navigationItem" title="捕获图像写入相册" id="4Kv-lL-Tvs"/>
+                    <connections>
+                        <outlet property="filterView" destination="vW3-AU-hgL" id="o5A-GL-RTb"/>
+                        <outlet property="saveToLibaryButton" destination="goe-7U-yBG" id="OxP-zf-fpV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IdA-EP-Xh8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
