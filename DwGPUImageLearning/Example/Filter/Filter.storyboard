@@ -44,7 +44,19 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="DRh-Gb-OB2" id="ma8-r3-Nwz">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="亮度调节器 - GPUImageBrightnessFilter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Exd-bo-Mdr">
+                                                    <rect key="frame" x="20" y="11" width="305" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="1xd-g7-DSS" kind="show" id="YuH-Di-wIJ"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="tpa-ZB-CdR">
                                         <rect key="frame" x="0.0" y="115" width="414" height="43.5"/>
@@ -52,7 +64,19 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="tpa-ZB-CdR" id="2Ie-8K-rWO">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="曝光调节器 - ExposureAdjustment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DRK-8E-Gsa">
+                                                    <rect key="frame" x="20" y="11" width="262" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="jh2-hX-oRH" kind="show" id="eUI-70-Alq"/>
+                                        </connections>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -66,9 +90,9 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kPi-k7-MwK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="229" y="200"/>
+            <point key="canvasLocation" x="228.98550724637684" y="199.55357142857142"/>
         </scene>
-        <!--SepiaToneFilter-->
+        <!--棕色调节-->
         <scene sceneID="L8w-BM-kDt">
             <objects>
                 <viewController id="VPQ-og-2qP" customClass="SepiaToneViewController" customModule="DwGPUImageLearning" customModuleProvider="target" sceneMemberID="viewController">
@@ -103,14 +127,102 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="TTA-vg-6ju"/>
                     </view>
-                    <navigationItem key="navigationItem" title="SepiaToneFilter" id="FF5-ze-ePx"/>
+                    <navigationItem key="navigationItem" title="棕色调节" id="FF5-ze-ePx"/>
                     <connections>
                         <outlet property="renderView" destination="kLc-Fv-Wmf" id="Dhu-OB-xyH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FDk-kL-gzq" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1123" y="-424"/>
+            <point key="canvasLocation" x="229" y="-599"/>
+        </scene>
+        <!--亮度-->
+        <scene sceneID="eWd-2J-br1">
+            <objects>
+                <viewController id="1xd-g7-DSS" customClass="BrightnessViewController" customModule="DwGPUImageLearning" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="EEw-br-Wm1"/>
+                        <viewControllerLayoutGuide type="bottom" id="YDk-7z-yD1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="SM2-Vd-ByB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" preservesSuperviewLayoutMargins="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BXo-J1-GqK" customClass="RenderView" customModule="GPUImage">
+                                <rect key="frame" x="0.0" y="8" width="414" height="800"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="-1" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="ffZ-63-k4J">
+                                <rect key="frame" x="39.5" y="758" width="335" height="31"/>
+                                <connections>
+                                    <action selector="valChangeAction:" destination="1xd-g7-DSS" eventType="valueChanged" id="U6X-O4-WZw"/>
+                                </connections>
+                            </slider>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="BXo-J1-GqK" firstAttribute="top" secondItem="EEw-br-Wm1" secondAttribute="bottom" constant="8" symbolic="YES" id="3lc-Tk-eZD"/>
+                            <constraint firstItem="ffZ-63-k4J" firstAttribute="bottom" secondItem="lRj-aU-c9X" secondAttribute="bottom" constant="-20" id="8BH-Ob-KpN"/>
+                            <constraint firstItem="BXo-J1-GqK" firstAttribute="leading" secondItem="SM2-Vd-ByB" secondAttribute="leading" id="9A2-ih-VxW"/>
+                            <constraint firstItem="ffZ-63-k4J" firstAttribute="width" secondItem="SM2-Vd-ByB" secondAttribute="width" multiplier="0.8" id="An3-rc-bZL"/>
+                            <constraint firstAttribute="trailing" secondItem="BXo-J1-GqK" secondAttribute="trailing" id="M8m-fY-gaD"/>
+                            <constraint firstItem="BXo-J1-GqK" firstAttribute="bottom" secondItem="YDk-7z-yD1" secondAttribute="top" id="lNZ-Qa-2Lp"/>
+                            <constraint firstItem="ffZ-63-k4J" firstAttribute="centerX" secondItem="lRj-aU-c9X" secondAttribute="centerX" id="uBT-n0-Ifa"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="lRj-aU-c9X"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="亮度" id="sk4-OC-VbH"/>
+                    <connections>
+                        <outlet property="renderView" destination="BXo-J1-GqK" id="uxH-JL-FSC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tQb-XY-WY1" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1067" y="-599"/>
+        </scene>
+        <!--曝光-->
+        <scene sceneID="4rS-Ww-SsY">
+            <objects>
+                <viewController id="jh2-hX-oRH" customClass="ExposureViewController" customModule="DwGPUImageLearning" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ybw-su-j0c"/>
+                        <viewControllerLayoutGuide type="bottom" id="hT0-op-OpR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="mmc-M2-1F9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" preservesSuperviewLayoutMargins="YES" translatesAutoresizingMaskIntoConstraints="NO" id="T2d-mw-FBy" customClass="RenderView" customModule="GPUImage">
+                                <rect key="frame" x="0.0" y="8" width="414" height="800"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="-10" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="3AK-DD-jCz">
+                                <rect key="frame" x="39.5" y="758" width="335" height="31"/>
+                                <connections>
+                                    <action selector="valChangeAction:" destination="jh2-hX-oRH" eventType="valueChanged" id="7jK-na-CVG"/>
+                                </connections>
+                            </slider>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="T2d-mw-FBy" secondAttribute="trailing" id="Dc2-Sr-RJX"/>
+                            <constraint firstItem="T2d-mw-FBy" firstAttribute="top" secondItem="ybw-su-j0c" secondAttribute="bottom" constant="8" symbolic="YES" id="K1N-0L-eHd"/>
+                            <constraint firstItem="T2d-mw-FBy" firstAttribute="leading" secondItem="mmc-M2-1F9" secondAttribute="leading" id="OiF-3z-e9w"/>
+                            <constraint firstItem="3AK-DD-jCz" firstAttribute="width" secondItem="mmc-M2-1F9" secondAttribute="width" multiplier="0.8" id="PZg-97-Q7I"/>
+                            <constraint firstItem="T2d-mw-FBy" firstAttribute="bottom" secondItem="hT0-op-OpR" secondAttribute="top" id="QVr-zi-NDq"/>
+                            <constraint firstItem="3AK-DD-jCz" firstAttribute="centerX" secondItem="n1U-tX-Pp3" secondAttribute="centerX" id="iA6-xX-kMU"/>
+                            <constraint firstItem="3AK-DD-jCz" firstAttribute="bottom" secondItem="n1U-tX-Pp3" secondAttribute="bottom" constant="-20" id="k45-m0-iS7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="n1U-tX-Pp3"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="曝光" id="Sku-RJ-ldX"/>
+                    <connections>
+                        <outlet property="renderView" destination="T2d-mw-FBy" id="rI7-9Q-BTb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FsI-oh-iAx" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1067" y="70"/>
         </scene>
     </scenes>
 </document>

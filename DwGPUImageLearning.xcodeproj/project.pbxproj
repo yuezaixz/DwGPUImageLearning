@@ -16,6 +16,9 @@
 		A6D348E42494D3C300BFF9EA /* GPUImage.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = A6D347282494D36100BFF9EA /* GPUImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A6D348E82494D46F00BFF9EA /* fanqie.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A6D348E72494D46F00BFF9EA /* fanqie.jpg */; };
 		A6D348EE2495186900BFF9EA /* Filter.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6D348ED2495186900BFF9EA /* Filter.storyboard */; };
+		A6D348F124951AE900BFF9EA /* DwFilterAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D348F024951AE900BFF9EA /* DwFilterAdapter.swift */; };
+		A6D348F324951F2300BFF9EA /* BrightnessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D348F224951F2300BFF9EA /* BrightnessViewController.swift */; };
+		A6D348F52495201A00BFF9EA /* ExposureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D348F42495201A00BFF9EA /* ExposureViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +85,9 @@
 		A6D3471C2494D36100BFF9EA /* GPUImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = GPUImage.xcodeproj; sourceTree = "<group>"; };
 		A6D348E72494D46F00BFF9EA /* fanqie.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = fanqie.jpg; sourceTree = "<group>"; };
 		A6D348ED2495186900BFF9EA /* Filter.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Filter.storyboard; sourceTree = "<group>"; };
+		A6D348F024951AE900BFF9EA /* DwFilterAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DwFilterAdapter.swift; sourceTree = "<group>"; };
+		A6D348F224951F2300BFF9EA /* BrightnessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrightnessViewController.swift; sourceTree = "<group>"; };
+		A6D348F42495201A00BFF9EA /* ExposureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExposureViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +121,7 @@
 		A6D34178249488A200BFF9EA /* DwGPUImageLearning */ = {
 			isa = PBXGroup;
 			children = (
+				A6D348EF24951A9200BFF9EA /* Base */,
 				A6D348E92494DBD000BFF9EA /* Example */,
 				A6D345282494890300BFF9EA /* Resources */,
 				A6D34179249488A200BFF9EA /* AppDelegate.swift */,
@@ -167,8 +174,18 @@
 			children = (
 				A6D3417D249488A200BFF9EA /* SepiaToneViewController.swift */,
 				A6D348ED2495186900BFF9EA /* Filter.storyboard */,
+				A6D348F224951F2300BFF9EA /* BrightnessViewController.swift */,
+				A6D348F42495201A00BFF9EA /* ExposureViewController.swift */,
 			);
 			path = Filter;
+			sourceTree = "<group>";
+		};
+		A6D348EF24951A9200BFF9EA /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				A6D348F024951AE900BFF9EA /* DwFilterAdapter.swift */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -285,7 +302,10 @@
 			files = (
 				A6D3417E249488A200BFF9EA /* SepiaToneViewController.swift in Sources */,
 				A6D3417A249488A200BFF9EA /* AppDelegate.swift in Sources */,
+				A6D348F124951AE900BFF9EA /* DwFilterAdapter.swift in Sources */,
+				A6D348F52495201A00BFF9EA /* ExposureViewController.swift in Sources */,
 				A6D3417C249488A200BFF9EA /* SceneDelegate.swift in Sources */,
+				A6D348F324951F2300BFF9EA /* BrightnessViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

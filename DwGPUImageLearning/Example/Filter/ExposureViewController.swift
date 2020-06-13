@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  ExposureViewController.swift
 //  DwGPUImageLearning
 //
 //  Created by 吴迪玮 on 2020/6/13.
@@ -9,26 +9,25 @@
 import UIKit
 import GPUImage
 
-class SepiaToneViewController: UIViewController {
+class ExposureViewController: UIViewController {
     
     @IBOutlet weak var renderView: RenderView!
 
     var picture: PictureInput!
-    var filter: SepiaToneFilter!
+    var filter: ExposureAdjustment!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         picture = PictureInput(image: UIImage(named: "fanqie.jpg")!)
-        filter = SepiaToneFilter()
+        filter = ExposureAdjustment()
         
         picture --> filter --> renderView
         picture.processImage()
     }
     
     @IBAction func valChangeAction(_ sender: UISlider) {
-        filter.intensity = sender.value
+        filter.exposure = sender.value
         picture.processImage()
     }
-    
-}
 
+}
