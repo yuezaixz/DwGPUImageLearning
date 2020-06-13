@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		A6D3417A249488A200BFF9EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D34179249488A200BFF9EA /* AppDelegate.swift */; };
 		A6D3417C249488A200BFF9EA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D3417B249488A200BFF9EA /* SceneDelegate.swift */; };
-		A6D3417E249488A200BFF9EA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D3417D249488A200BFF9EA /* ViewController.swift */; };
+		A6D3417E249488A200BFF9EA /* SepiaToneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D3417D249488A200BFF9EA /* SepiaToneViewController.swift */; };
 		A6D34181249488A200BFF9EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6D3417F249488A200BFF9EA /* Main.storyboard */; };
 		A6D34183249488A500BFF9EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6D34182249488A500BFF9EA /* Assets.xcassets */; };
 		A6D34186249488A500BFF9EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6D34184249488A500BFF9EA /* LaunchScreen.storyboard */; };
@@ -73,7 +73,7 @@
 		A6D34176249488A200BFF9EA /* DwGPUImageLearning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DwGPUImageLearning.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6D34179249488A200BFF9EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A6D3417B249488A200BFF9EA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A6D3417D249488A200BFF9EA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A6D3417D249488A200BFF9EA /* SepiaToneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SepiaToneViewController.swift; sourceTree = "<group>"; };
 		A6D34180249488A200BFF9EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A6D34182249488A500BFF9EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A6D34185249488A500BFF9EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -113,10 +113,10 @@
 		A6D34178249488A200BFF9EA /* DwGPUImageLearning */ = {
 			isa = PBXGroup;
 			children = (
+				A6D348E92494DBD000BFF9EA /* Example */,
 				A6D345282494890300BFF9EA /* Resources */,
 				A6D34179249488A200BFF9EA /* AppDelegate.swift */,
 				A6D3417B249488A200BFF9EA /* SceneDelegate.swift */,
-				A6D3417D249488A200BFF9EA /* ViewController.swift */,
 				A6D3417F249488A200BFF9EA /* Main.storyboard */,
 			);
 			path = DwGPUImageLearning;
@@ -150,6 +150,22 @@
 				A6D3472A2494D36100BFF9EA /* GPUImageTests_iOS.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		A6D348E92494DBD000BFF9EA /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				A6D348EA2494DBE800BFF9EA /* Filter */,
+			);
+			path = Example;
+			sourceTree = "<group>";
+		};
+		A6D348EA2494DBE800BFF9EA /* Filter */ = {
+			isa = PBXGroup;
+			children = (
+				A6D3417D249488A200BFF9EA /* SepiaToneViewController.swift */,
+			);
+			path = Filter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,7 +279,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A6D3417E249488A200BFF9EA /* ViewController.swift in Sources */,
+				A6D3417E249488A200BFF9EA /* SepiaToneViewController.swift in Sources */,
 				A6D3417A249488A200BFF9EA /* AppDelegate.swift in Sources */,
 				A6D3417C249488A200BFF9EA /* SceneDelegate.swift in Sources */,
 			);
