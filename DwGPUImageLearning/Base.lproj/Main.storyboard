@@ -1,24 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fMb-sG-UFD">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <scene sceneID="lff-oW-TOn">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController id="fMb-sG-UFD" customClass="ViewController" customModule="SimpleImageFilter" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dFk-fO-Ede"/>
+                        <viewControllerLayoutGuide type="bottom" id="Hwf-k1-Avn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="M0v-Cz-O5b">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" preservesSuperviewLayoutMargins="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UFQ-Ox-aSn" customClass="RenderView" customModule="GPUImage">
+                                <rect key="frame" x="0.0" y="52" width="414" height="810"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="UFQ-Ox-aSn" firstAttribute="bottom" secondItem="Hwf-k1-Avn" secondAttribute="top" id="N6a-Cn-dRt"/>
+                            <constraint firstAttribute="trailing" secondItem="UFQ-Ox-aSn" secondAttribute="trailing" id="QEj-07-BDj"/>
+                            <constraint firstItem="UFQ-Ox-aSn" firstAttribute="top" secondItem="dFk-fO-Ede" secondAttribute="bottom" constant="8" symbolic="YES" id="jip-RB-tlA"/>
+                            <constraint firstItem="UFQ-Ox-aSn" firstAttribute="leading" secondItem="M0v-Cz-O5b" secondAttribute="leading" id="olX-Hs-A9G"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Ooq-gJ-FuM"/>
                     </view>
+                    <connections>
+                        <outlet property="renderView" destination="UFQ-Ox-aSn" id="DZl-aR-9M9"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jen-gO-bey" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-96" y="184"/>
         </scene>
     </scenes>
 </document>

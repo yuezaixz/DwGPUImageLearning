@@ -7,14 +7,22 @@
 //
 
 import UIKit
+import GPUImage
 
 class ViewController: UIViewController {
+    
+    @IBOutlet weak var renderView: RenderView!
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
+    var picture:PictureInput!
+    var filter:SepiaToneFilter!
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        
+        picture = PictureInput(image:UIImage(named:"fanqie.jpg")!)
+        filter = SepiaToneFilter()
+        picture --> filter --> renderView
+        picture.processImage()
     }
-
-
 }
 
