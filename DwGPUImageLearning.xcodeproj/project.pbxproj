@@ -15,6 +15,7 @@
 		A6D34186249488A500BFF9EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6D34184249488A500BFF9EA /* LaunchScreen.storyboard */; };
 		A6D348E42494D3C300BFF9EA /* GPUImage.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = A6D347282494D36100BFF9EA /* GPUImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A6D348E82494D46F00BFF9EA /* fanqie.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A6D348E72494D46F00BFF9EA /* fanqie.jpg */; };
+		A6D348EE2495186900BFF9EA /* Filter.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6D348ED2495186900BFF9EA /* Filter.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +81,7 @@
 		A6D34187249488A500BFF9EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A6D3471C2494D36100BFF9EA /* GPUImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = GPUImage.xcodeproj; sourceTree = "<group>"; };
 		A6D348E72494D46F00BFF9EA /* fanqie.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = fanqie.jpg; sourceTree = "<group>"; };
+		A6D348ED2495186900BFF9EA /* Filter.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Filter.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +166,7 @@
 			isa = PBXGroup;
 			children = (
 				A6D3417D249488A200BFF9EA /* SepiaToneViewController.swift */,
+				A6D348ED2495186900BFF9EA /* Filter.storyboard */,
 			);
 			path = Filter;
 			sourceTree = "<group>";
@@ -267,6 +270,7 @@
 			files = (
 				A6D34186249488A500BFF9EA /* LaunchScreen.storyboard in Resources */,
 				A6D34183249488A500BFF9EA /* Assets.xcassets in Resources */,
+				A6D348EE2495186900BFF9EA /* Filter.storyboard in Resources */,
 				A6D348E82494D46F00BFF9EA /* fanqie.jpg in Resources */,
 				A6D34181249488A200BFF9EA /* Main.storyboard in Resources */,
 			);
