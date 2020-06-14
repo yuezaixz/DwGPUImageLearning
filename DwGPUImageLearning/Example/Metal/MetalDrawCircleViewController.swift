@@ -33,6 +33,7 @@ class MetalDrawCircleViewController: UIViewController {
         // 内存分配器
         let allocator = MTKMeshBufferAllocator(device: device)
         // MDLMesh 是 Model I/O 创建一个具有指定大小的球体在数据缓冲区的所有顶点信息
+        // sphereWithExtent 依次是  x y z的百分比
         let mdlMesh = MDLMesh(sphereWithExtent: [0.75, 0.75, 0.75], segments: [100, 100], inwardNormals: false, geometryType: .triangles, allocator: allocator)
         // 将MDLMesh转换成网格MTKMesh
         guard let mesh = try? MTKMesh(mesh: mdlMesh, device: device) else { return }
