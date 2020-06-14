@@ -25,6 +25,8 @@
 		A6D349032495249400BFF9EA /* InnerFilterIndexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D349022495249400BFF9EA /* InnerFilterIndexViewController.swift */; };
 		A6D34905249524E500BFF9EA /* InnerFilterDisplayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D34904249524E500BFF9EA /* InnerFilterDisplayViewController.swift */; };
 		A6D349072495CF6F00BFF9EA /* PhotoAlbumUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D349062495CF6F00BFF9EA /* PhotoAlbumUtil.swift */; };
+		A6D34A5224964F3700BFF9EA /* Metal.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6D34A5124964F3700BFF9EA /* Metal.storyboard */; };
+		A6D34A5424964FC400BFF9EA /* MetalDrawCircleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D34A5324964FC400BFF9EA /* MetalDrawCircleViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,6 +102,8 @@
 		A6D349022495249400BFF9EA /* InnerFilterIndexViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InnerFilterIndexViewController.swift; sourceTree = "<group>"; };
 		A6D34904249524E500BFF9EA /* InnerFilterDisplayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InnerFilterDisplayViewController.swift; sourceTree = "<group>"; };
 		A6D349062495CF6F00BFF9EA /* PhotoAlbumUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoAlbumUtil.swift; sourceTree = "<group>"; };
+		A6D34A5124964F3700BFF9EA /* Metal.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Metal.storyboard; sourceTree = "<group>"; };
+		A6D34A5324964FC400BFF9EA /* MetalDrawCircleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalDrawCircleViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,6 +180,7 @@
 		A6D348E92494DBD000BFF9EA /* Example */ = {
 			isa = PBXGroup;
 			children = (
+				A6D34A4D24964F2700BFF9EA /* Metal */,
 				A6D348F6249521FE00BFF9EA /* StillCamera */,
 				A6D348EA2494DBE800BFF9EA /* Filter */,
 			);
@@ -212,6 +217,15 @@
 				A6D348F9249522E200BFF9EA /* StillCameraToLibaryViewController.swift */,
 			);
 			path = StillCamera;
+			sourceTree = "<group>";
+		};
+		A6D34A4D24964F2700BFF9EA /* Metal */ = {
+			isa = PBXGroup;
+			children = (
+				A6D34A5124964F3700BFF9EA /* Metal.storyboard */,
+				A6D34A5324964FC400BFF9EA /* MetalDrawCircleViewController.swift */,
+			);
+			path = Metal;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -313,6 +327,7 @@
 			files = (
 				A6D34186249488A500BFF9EA /* LaunchScreen.storyboard in Resources */,
 				A6D34183249488A500BFF9EA /* Assets.xcassets in Resources */,
+				A6D34A5224964F3700BFF9EA /* Metal.storyboard in Resources */,
 				A6D348EE2495186900BFF9EA /* Filter.storyboard in Resources */,
 				A6D348F82495221700BFF9EA /* StillCamera.storyboard in Resources */,
 				A6D348E82494D46F00BFF9EA /* fanqie.jpg in Resources */,
@@ -327,6 +342,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6D34A5424964FC400BFF9EA /* MetalDrawCircleViewController.swift in Sources */,
 				A6D34905249524E500BFF9EA /* InnerFilterDisplayViewController.swift in Sources */,
 				A6D3417E249488A200BFF9EA /* SepiaToneViewController.swift in Sources */,
 				A6D349032495249400BFF9EA /* InnerFilterIndexViewController.swift in Sources */,
