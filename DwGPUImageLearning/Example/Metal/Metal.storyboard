@@ -45,7 +45,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="绘制多边形" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LMi-4B-bSF">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="绘制三角形" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LMi-4B-bSF">
                                                     <rect key="frame" x="29" y="11" width="87" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -72,7 +72,7 @@
             </objects>
             <point key="canvasLocation" x="-301" y="112"/>
         </scene>
-        <!--绘制多边形-->
+        <!--绘制三角形-->
         <scene sceneID="YfP-4k-vgC">
             <objects>
                 <viewController id="2lT-5w-dGY" customClass="MetaDrawShapeViewController" customModule="DwGPUImageLearning" customModuleProvider="target" sceneMemberID="viewController">
@@ -94,7 +94,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6U3-Td-efk"/>
                     </view>
-                    <navigationItem key="navigationItem" title="绘制多边形" id="C1l-6K-VAI"/>
+                    <navigationItem key="navigationItem" title="绘制三角形" id="C1l-6K-VAI"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xy6-U4-nzs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

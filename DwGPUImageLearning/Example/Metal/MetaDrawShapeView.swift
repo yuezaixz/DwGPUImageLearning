@@ -60,7 +60,6 @@ class MetaDrawShapeView: UIView {
         return CAMetalLayer.self
     }
 
-    
     override func didMoveToWindow() {
         super.didMoveToWindow()
         render()

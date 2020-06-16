@@ -10,6 +10,9 @@
 		A61D36A9249914DC00C211E7 /* MetaDrawShapeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61D36A8249914DC00C211E7 /* MetaDrawShapeViewController.swift */; };
 		A61D36B224991F2C00C211E7 /* MetaDrawShapeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61D36B124991F2C00C211E7 /* MetaDrawShapeView.swift */; };
 		A61D36B424991F9A00C211E7 /* DrawShapeShader.metal in Sources */ = {isa = PBXBuildFile; fileRef = A61D36B324991F9A00C211E7 /* DrawShapeShader.metal */; };
+		A61D36B72499238000C211E7 /* OpenGLES.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A61D36B62499238000C211E7 /* OpenGLES.storyboard */; };
+		A61D36B9249923D100C211E7 /* GLDrawShapeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61D36B8249923D100C211E7 /* GLDrawShapeViewController.swift */; };
+		A61D36BB2499245400C211E7 /* GLDrawShapeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61D36BA2499245400C211E7 /* GLDrawShapeView.swift */; };
 		A6D3417A249488A200BFF9EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D34179249488A200BFF9EA /* AppDelegate.swift */; };
 		A6D3417C249488A200BFF9EA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D3417B249488A200BFF9EA /* SceneDelegate.swift */; };
 		A6D3417E249488A200BFF9EA /* SepiaToneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D3417D249488A200BFF9EA /* SepiaToneViewController.swift */; };
@@ -90,6 +93,9 @@
 		A61D36AE24991C8B00C211E7 /* DwShaderType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DwShaderType.h; sourceTree = "<group>"; };
 		A61D36B124991F2C00C211E7 /* MetaDrawShapeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetaDrawShapeView.swift; sourceTree = "<group>"; };
 		A61D36B324991F9A00C211E7 /* DrawShapeShader.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = DrawShapeShader.metal; sourceTree = "<group>"; };
+		A61D36B62499238000C211E7 /* OpenGLES.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OpenGLES.storyboard; sourceTree = "<group>"; };
+		A61D36B8249923D100C211E7 /* GLDrawShapeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GLDrawShapeViewController.swift; sourceTree = "<group>"; };
+		A61D36BA2499245400C211E7 /* GLDrawShapeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GLDrawShapeView.swift; sourceTree = "<group>"; };
 		A6D34176249488A200BFF9EA /* DwGPUImageLearning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DwGPUImageLearning.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6D34179249488A200BFF9EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A6D3417B249488A200BFF9EA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -125,6 +131,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A61D36B52499236B00C211E7 /* OpenGLES */ = {
+			isa = PBXGroup;
+			children = (
+				A61D36B62499238000C211E7 /* OpenGLES.storyboard */,
+				A61D36B8249923D100C211E7 /* GLDrawShapeViewController.swift */,
+				A61D36BA2499245400C211E7 /* GLDrawShapeView.swift */,
+			);
+			path = OpenGLES;
+			sourceTree = "<group>";
+		};
 		A6D3416D249488A200BFF9EA = {
 			isa = PBXGroup;
 			children = (
@@ -189,6 +205,7 @@
 		A6D348E92494DBD000BFF9EA /* Example */ = {
 			isa = PBXGroup;
 			children = (
+				A61D36B52499236B00C211E7 /* OpenGLES */,
 				A6D34A4D24964F2700BFF9EA /* Metal */,
 				A6D348F6249521FE00BFF9EA /* StillCamera */,
 				A6D348EA2494DBE800BFF9EA /* Filter */,
@@ -346,6 +363,7 @@
 				A6D348F82495221700BFF9EA /* StillCamera.storyboard in Resources */,
 				A6D348E82494D46F00BFF9EA /* fanqie.jpg in Resources */,
 				A6D34181249488A200BFF9EA /* Main.storyboard in Resources */,
+				A61D36B72499238000C211E7 /* OpenGLES.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,11 +380,13 @@
 				A61D36B424991F9A00C211E7 /* DrawShapeShader.metal in Sources */,
 				A6D349032495249400BFF9EA /* InnerFilterIndexViewController.swift in Sources */,
 				A6D349072495CF6F00BFF9EA /* PhotoAlbumUtil.swift in Sources */,
+				A61D36BB2499245400C211E7 /* GLDrawShapeView.swift in Sources */,
 				A61D36B224991F2C00C211E7 /* MetaDrawShapeView.swift in Sources */,
 				A6D3417A249488A200BFF9EA /* AppDelegate.swift in Sources */,
 				A6D348FA249522E200BFF9EA /* StillCameraToLibaryViewController.swift in Sources */,
 				A61D36A9249914DC00C211E7 /* MetaDrawShapeViewController.swift in Sources */,
 				A6D349012495244C00BFF9EA /* filterOperations.swift in Sources */,
+				A61D36B9249923D100C211E7 /* GLDrawShapeViewController.swift in Sources */,
 				A6D348F124951AE900BFF9EA /* DwFilterAdapter.swift in Sources */,
 				A6D348F52495201A00BFF9EA /* ExposureViewController.swift in Sources */,
 				A6D3417C249488A200BFF9EA /* SceneDelegate.swift in Sources */,
@@ -525,7 +545,13 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L6U7BB57HF;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"GLES_SILENCE_DEPRECATION=1",
+					"$(inherited)",
+				);
 				INFOPLIST_FILE = DwGPUImageLearning/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -546,7 +572,9 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L6U7BB57HF;
+				GCC_PREPROCESSOR_DEFINITIONS = "GLES_SILENCE_DEPRECATION=1";
 				INFOPLIST_FILE = DwGPUImageLearning/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
