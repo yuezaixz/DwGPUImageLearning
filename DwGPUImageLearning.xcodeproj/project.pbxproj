@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A61D36A9249914DC00C211E7 /* MetaDrawShapeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61D36A8249914DC00C211E7 /* MetaDrawShapeViewController.swift */; };
+		A61D36B224991F2C00C211E7 /* MetaDrawShapeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61D36B124991F2C00C211E7 /* MetaDrawShapeView.swift */; };
+		A61D36B424991F9A00C211E7 /* DrawShapeShader.metal in Sources */ = {isa = PBXBuildFile; fileRef = A61D36B324991F9A00C211E7 /* DrawShapeShader.metal */; };
 		A6D3417A249488A200BFF9EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D34179249488A200BFF9EA /* AppDelegate.swift */; };
 		A6D3417C249488A200BFF9EA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D3417B249488A200BFF9EA /* SceneDelegate.swift */; };
 		A6D3417E249488A200BFF9EA /* SepiaToneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D3417D249488A200BFF9EA /* SepiaToneViewController.swift */; };
@@ -82,6 +85,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		A61D36A8249914DC00C211E7 /* MetaDrawShapeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetaDrawShapeViewController.swift; sourceTree = "<group>"; };
+		A61D36AD24991C8B00C211E7 /* DwGPUImageLearning-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DwGPUImageLearning-Bridging-Header.h"; sourceTree = "<group>"; };
+		A61D36AE24991C8B00C211E7 /* DwShaderType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DwShaderType.h; sourceTree = "<group>"; };
+		A61D36B124991F2C00C211E7 /* MetaDrawShapeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetaDrawShapeView.swift; sourceTree = "<group>"; };
+		A61D36B324991F9A00C211E7 /* DrawShapeShader.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = DrawShapeShader.metal; sourceTree = "<group>"; };
 		A6D34176249488A200BFF9EA /* DwGPUImageLearning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DwGPUImageLearning.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6D34179249488A200BFF9EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A6D3417B249488A200BFF9EA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -224,6 +232,11 @@
 			children = (
 				A6D34A5124964F3700BFF9EA /* Metal.storyboard */,
 				A6D34A5324964FC400BFF9EA /* MetalDrawCircleViewController.swift */,
+				A61D36A8249914DC00C211E7 /* MetaDrawShapeViewController.swift */,
+				A61D36AE24991C8B00C211E7 /* DwShaderType.h */,
+				A61D36AD24991C8B00C211E7 /* DwGPUImageLearning-Bridging-Header.h */,
+				A61D36B124991F2C00C211E7 /* MetaDrawShapeView.swift */,
+				A61D36B324991F9A00C211E7 /* DrawShapeShader.metal */,
 			);
 			path = Metal;
 			sourceTree = "<group>";
@@ -262,6 +275,7 @@
 				TargetAttributes = {
 					A6D34175249488A200BFF9EA = {
 						CreatedOnToolsVersion = 11.5;
+						LastSwiftMigration = 1150;
 					};
 				};
 			};
@@ -345,10 +359,13 @@
 				A6D34A5424964FC400BFF9EA /* MetalDrawCircleViewController.swift in Sources */,
 				A6D34905249524E500BFF9EA /* InnerFilterDisplayViewController.swift in Sources */,
 				A6D3417E249488A200BFF9EA /* SepiaToneViewController.swift in Sources */,
+				A61D36B424991F9A00C211E7 /* DrawShapeShader.metal in Sources */,
 				A6D349032495249400BFF9EA /* InnerFilterIndexViewController.swift in Sources */,
 				A6D349072495CF6F00BFF9EA /* PhotoAlbumUtil.swift in Sources */,
+				A61D36B224991F2C00C211E7 /* MetaDrawShapeView.swift in Sources */,
 				A6D3417A249488A200BFF9EA /* AppDelegate.swift in Sources */,
 				A6D348FA249522E200BFF9EA /* StillCameraToLibaryViewController.swift in Sources */,
+				A61D36A9249914DC00C211E7 /* MetaDrawShapeViewController.swift in Sources */,
 				A6D349012495244C00BFF9EA /* filterOperations.swift in Sources */,
 				A6D348F124951AE900BFF9EA /* DwFilterAdapter.swift in Sources */,
 				A6D348F52495201A00BFF9EA /* ExposureViewController.swift in Sources */,
@@ -505,6 +522,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L6U7BB57HF;
 				INFOPLIST_FILE = DwGPUImageLearning/Resources/Info.plist;
@@ -514,6 +532,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.davidandty.DwGPUImageLearning;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DwGPUImageLearning/Example/Metal/DwGPUImageLearning-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -523,6 +543,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L6U7BB57HF;
 				INFOPLIST_FILE = DwGPUImageLearning/Resources/Info.plist;
@@ -532,6 +553,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.davidandty.DwGPUImageLearning;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DwGPUImageLearning/Example/Metal/DwGPUImageLearning-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

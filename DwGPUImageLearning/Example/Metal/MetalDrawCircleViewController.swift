@@ -88,7 +88,11 @@ class MetalDrawCircleViewController: UIViewController {
             renderEncoder.setVertexBuffer(mesh.vertexBuffers[0].buffer, offset: 0, index: 0)
             
             guard let submesh = mesh.submeshes.first else { fatalError() }
-            renderEncoder.drawIndexedPrimitives(type: .triangle, indexCount: submesh.indexCount, indexType: submesh.indexType, indexBuffer: submesh.indexBuffer.buffer, indexBufferOffset: 0)
+            
+            // .point 光栅化时候只对点进行
+            // .lineStrip 光栅化时候连接所有临近的顶点
+            // .triangle 对于所有独立的3个点集合，进行光栅化
+            renderEncoder.drawIndexedPrimitives(type: .lineStrip, indexCount: submesh.indexCount, indexType: submesh.indexType, indexBuffer: submesh.indexBuffer.buffer, indexBufferOffset: 0)
             
             renderEncoder.endEncoding()
             guard let drawable = view.currentDrawable else { fatalError() }
