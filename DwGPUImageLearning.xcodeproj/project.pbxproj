@@ -151,6 +151,7 @@
 				A6D34179249488A200BFF9EA /* AppDelegate.swift */,
 				A6D3417B249488A200BFF9EA /* SceneDelegate.swift */,
 				A6D3417F249488A200BFF9EA /* Main.storyboard */,
+				A61D36AD24991C8B00C211E7 /* DwGPUImageLearning-Bridging-Header.h */,
 			);
 			path = DwGPUImageLearning;
 			sourceTree = "<group>";
@@ -234,7 +235,6 @@
 				A6D34A5324964FC400BFF9EA /* MetalDrawCircleViewController.swift */,
 				A61D36A8249914DC00C211E7 /* MetaDrawShapeViewController.swift */,
 				A61D36AE24991C8B00C211E7 /* DwShaderType.h */,
-				A61D36AD24991C8B00C211E7 /* DwGPUImageLearning-Bridging-Header.h */,
 				A61D36B124991F2C00C211E7 /* MetaDrawShapeView.swift */,
 				A61D36B324991F9A00C211E7 /* DrawShapeShader.metal */,
 			);
@@ -532,7 +532,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.davidandty.DwGPUImageLearning;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "DwGPUImageLearning/Example/Metal/DwGPUImageLearning-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "DwGPUImageLearning/DwGPUImageLearning-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -553,7 +553,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.davidandty.DwGPUImageLearning;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "DwGPUImageLearning/Example/Metal/DwGPUImageLearning-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "DwGPUImageLearning/DwGPUImageLearning-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

@@ -32,15 +32,13 @@ class MetaDrawShapeView: UIView {
         commonInit()
     }
     
-    // MARK: - rpivate
+    // MARK: - private
     private func commonInit() {
         device = MTLCreateSystemDefaultDevice()
-        
         
         let library = device?.makeDefaultLibrary()
         let vertexFunction = library?.makeFunction(name: "vertexDrawShapeShader")
         let fragmentFunction = library?.makeFunction(name: "fragmentDrawShapeShader")
-        
         
         let pipelineDescriptor = MTLRenderPipelineDescriptor()
         pipelineDescriptor.colorAttachments[0].pixelFormat = metalLayer.pixelFormat
