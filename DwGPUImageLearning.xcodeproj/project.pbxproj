@@ -13,6 +13,9 @@
 		A61D36B72499238000C211E7 /* OpenGLES.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A61D36B62499238000C211E7 /* OpenGLES.storyboard */; };
 		A61D36B9249923D100C211E7 /* GLDrawShapeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61D36B8249923D100C211E7 /* GLDrawShapeViewController.swift */; };
 		A61D36BB2499245400C211E7 /* GLDrawShapeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61D36BA2499245400C211E7 /* GLDrawShapeView.swift */; };
+		A61D36C0249A19AB00C211E7 /* MetalKitDrawShapeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61D36BF249A19AB00C211E7 /* MetalKitDrawShapeViewController.swift */; };
+		A61D36C5249A1A1F00C211E7 /* MetaKitDrawShapeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61D36C4249A1A1F00C211E7 /* MetaKitDrawShapeView.swift */; };
+		A61D36C7249A1A9700C211E7 /* MTKDrawShapeShader.metal in Sources */ = {isa = PBXBuildFile; fileRef = A61D36C6249A1A9700C211E7 /* MTKDrawShapeShader.metal */; };
 		A6D3417A249488A200BFF9EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D34179249488A200BFF9EA /* AppDelegate.swift */; };
 		A6D3417C249488A200BFF9EA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D3417B249488A200BFF9EA /* SceneDelegate.swift */; };
 		A6D3417E249488A200BFF9EA /* SepiaToneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D3417D249488A200BFF9EA /* SepiaToneViewController.swift */; };
@@ -96,6 +99,9 @@
 		A61D36B62499238000C211E7 /* OpenGLES.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OpenGLES.storyboard; sourceTree = "<group>"; };
 		A61D36B8249923D100C211E7 /* GLDrawShapeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GLDrawShapeViewController.swift; sourceTree = "<group>"; };
 		A61D36BA2499245400C211E7 /* GLDrawShapeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GLDrawShapeView.swift; sourceTree = "<group>"; };
+		A61D36BF249A19AB00C211E7 /* MetalKitDrawShapeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalKitDrawShapeViewController.swift; sourceTree = "<group>"; };
+		A61D36C4249A1A1F00C211E7 /* MetaKitDrawShapeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetaKitDrawShapeView.swift; sourceTree = "<group>"; };
+		A61D36C6249A1A9700C211E7 /* MTKDrawShapeShader.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = MTKDrawShapeShader.metal; sourceTree = "<group>"; };
 		A6D34176249488A200BFF9EA /* DwGPUImageLearning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DwGPUImageLearning.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6D34179249488A200BFF9EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A6D3417B249488A200BFF9EA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -254,6 +260,9 @@
 				A61D36AE24991C8B00C211E7 /* DwShaderType.h */,
 				A61D36B124991F2C00C211E7 /* MetaDrawShapeView.swift */,
 				A61D36B324991F9A00C211E7 /* DrawShapeShader.metal */,
+				A61D36BF249A19AB00C211E7 /* MetalKitDrawShapeViewController.swift */,
+				A61D36C4249A1A1F00C211E7 /* MetaKitDrawShapeView.swift */,
+				A61D36C6249A1A9700C211E7 /* MTKDrawShapeShader.metal */,
 			);
 			path = Metal;
 			sourceTree = "<group>";
@@ -378,7 +387,9 @@
 				A6D34905249524E500BFF9EA /* InnerFilterDisplayViewController.swift in Sources */,
 				A6D3417E249488A200BFF9EA /* SepiaToneViewController.swift in Sources */,
 				A61D36B424991F9A00C211E7 /* DrawShapeShader.metal in Sources */,
+				A61D36C5249A1A1F00C211E7 /* MetaKitDrawShapeView.swift in Sources */,
 				A6D349032495249400BFF9EA /* InnerFilterIndexViewController.swift in Sources */,
+				A61D36C0249A19AB00C211E7 /* MetalKitDrawShapeViewController.swift in Sources */,
 				A6D349072495CF6F00BFF9EA /* PhotoAlbumUtil.swift in Sources */,
 				A61D36BB2499245400C211E7 /* GLDrawShapeView.swift in Sources */,
 				A61D36B224991F2C00C211E7 /* MetaDrawShapeView.swift in Sources */,
@@ -387,6 +398,7 @@
 				A61D36A9249914DC00C211E7 /* MetaDrawShapeViewController.swift in Sources */,
 				A6D349012495244C00BFF9EA /* filterOperations.swift in Sources */,
 				A61D36B9249923D100C211E7 /* GLDrawShapeViewController.swift in Sources */,
+				A61D36C7249A1A9700C211E7 /* MTKDrawShapeShader.metal in Sources */,
 				A6D348F124951AE900BFF9EA /* DwFilterAdapter.swift in Sources */,
 				A6D348F52495201A00BFF9EA /* ExposureViewController.swift in Sources */,
 				A6D3417C249488A200BFF9EA /* SceneDelegate.swift in Sources */,
