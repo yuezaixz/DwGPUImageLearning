@@ -29,16 +29,13 @@ class MetaRotatingCubeView: MTKView {
         setupBuffers()
         setupShaders()
         
-        let screenWidth = UIScreen.main.bounds.width
-        let screenHeight = UIScreen.main.bounds.height
-//        let screenDepth = (screenWidth + screenHeight) / 2
-        let radio = screenHeight / screenWidth
-        scales[1] = scales[0] / Float(radio)
-        
-        // FIXME?
-        scales[2] = 0.4
-//        radio = screenDepth / screenWidth
-//        scales[2] = scales[0] / Float(radio)
+//        let screenWidth = UIScreen.main.bounds.width
+//        let screenHeight = UIScreen.main.bounds.height
+//        let radio = screenHeight / screenWidth
+//        scales[1] = scales[0] / Float(radio)
+//        
+//        // FIXME?
+//        scales[2] = 0.4
     }
     
     func setupBuffers() {
@@ -77,7 +74,8 @@ class MetaRotatingCubeView: MTKView {
         let modelMatrix = matrix_multiply(matrix_multiply(rotatedX, rotatedY), scaled)
         let cameraPosition = vector_float3(0, 0, -3)
         let viewMatrix = translationMatrix(position: cameraPosition)
-        let projMatrix = projectionMatrix(near: 0, far: 10, aspect: 1, fovy: 1)
+        let aspect = Float(drawableSize.width / drawableSize.height)
+        let projMatrix = projectionMatrix(near: 1, far: 100, aspect: aspect, fovy: 1.1)
         let modelViewProjectionMatrix = matrix_multiply(projMatrix, matrix_multiply(viewMatrix, modelMatrix))
         let bufferPointer = uniformBuffer.contents()
         var uniforms = Uniforms(modelViewProjectionMatrix: modelViewProjectionMatrix)
