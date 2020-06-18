@@ -7,6 +7,22 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--旋转的立方体-->
+        <scene sceneID="HJ9-CR-MF4">
+            <objects>
+                <viewController id="2MV-1y-BG0" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Xas-cq-xHg" customClass="MetaRotatingCubeView" customModule="DwGPUImageLearning" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="YDg-sT-8KO"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="旋转的立方体" id="Ij4-K7-Eex"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ymz-Gd-OoP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1099" y="801"/>
+        </scene>
         <!--Metal-->
         <scene sceneID="vnM-sy-MV7">
             <objects>
@@ -76,6 +92,26 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <segue destination="NMO-A1-OxO" kind="show" id="zmT-vF-tqd"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="A72-CE-aQJ">
+                                        <rect key="frame" x="0.0" y="158.5" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="A72-CE-aQJ" id="FAC-zh-xGk">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="旋转的立方体" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8SY-5w-B5p">
+                                                    <rect key="frame" x="29" y="11" width="317" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="2MV-1y-BG0" kind="show" id="lMA-oi-rxk"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>

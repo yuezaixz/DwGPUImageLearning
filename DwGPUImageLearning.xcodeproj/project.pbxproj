@@ -16,6 +16,10 @@
 		A61D36C0249A19AB00C211E7 /* MetalKitDrawShapeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61D36BF249A19AB00C211E7 /* MetalKitDrawShapeViewController.swift */; };
 		A61D36C5249A1A1F00C211E7 /* MetaKitDrawShapeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61D36C4249A1A1F00C211E7 /* MetaKitDrawShapeView.swift */; };
 		A61D36C7249A1A9700C211E7 /* MTKDrawShapeShader.metal in Sources */ = {isa = PBXBuildFile; fileRef = A61D36C6249A1A9700C211E7 /* MTKDrawShapeShader.metal */; };
+		A61D36CB249B5B2D00C211E7 /* MetaRotatingCubeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61D36CA249B5B2D00C211E7 /* MetaRotatingCubeViewController.swift */; };
+		A61D36CD249B5B5700C211E7 /* MetaRotatingCubeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61D36CC249B5B5700C211E7 /* MetaRotatingCubeView.swift */; };
+		A61D36CF249B5DEF00C211E7 /* MyVertexModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61D36CE249B5DEF00C211E7 /* MyVertexModel.swift */; };
+		A61D36D1249B5F0F00C211E7 /* CubeShaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = A61D36D0249B5F0F00C211E7 /* CubeShaders.metal */; };
 		A6D3417A249488A200BFF9EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D34179249488A200BFF9EA /* AppDelegate.swift */; };
 		A6D3417C249488A200BFF9EA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D3417B249488A200BFF9EA /* SceneDelegate.swift */; };
 		A6D3417E249488A200BFF9EA /* SepiaToneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D3417D249488A200BFF9EA /* SepiaToneViewController.swift */; };
@@ -102,6 +106,10 @@
 		A61D36BF249A19AB00C211E7 /* MetalKitDrawShapeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalKitDrawShapeViewController.swift; sourceTree = "<group>"; };
 		A61D36C4249A1A1F00C211E7 /* MetaKitDrawShapeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetaKitDrawShapeView.swift; sourceTree = "<group>"; };
 		A61D36C6249A1A9700C211E7 /* MTKDrawShapeShader.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = MTKDrawShapeShader.metal; sourceTree = "<group>"; };
+		A61D36CA249B5B2D00C211E7 /* MetaRotatingCubeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetaRotatingCubeViewController.swift; sourceTree = "<group>"; };
+		A61D36CC249B5B5700C211E7 /* MetaRotatingCubeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetaRotatingCubeView.swift; sourceTree = "<group>"; };
+		A61D36CE249B5DEF00C211E7 /* MyVertexModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyVertexModel.swift; sourceTree = "<group>"; };
+		A61D36D0249B5F0F00C211E7 /* CubeShaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = CubeShaders.metal; sourceTree = "<group>"; };
 		A6D34176249488A200BFF9EA /* DwGPUImageLearning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DwGPUImageLearning.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6D34179249488A200BFF9EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A6D3417B249488A200BFF9EA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -263,6 +271,10 @@
 				A61D36BF249A19AB00C211E7 /* MetalKitDrawShapeViewController.swift */,
 				A61D36C4249A1A1F00C211E7 /* MetaKitDrawShapeView.swift */,
 				A61D36C6249A1A9700C211E7 /* MTKDrawShapeShader.metal */,
+				A61D36CA249B5B2D00C211E7 /* MetaRotatingCubeViewController.swift */,
+				A61D36CC249B5B5700C211E7 /* MetaRotatingCubeView.swift */,
+				A61D36CE249B5DEF00C211E7 /* MyVertexModel.swift */,
+				A61D36D0249B5F0F00C211E7 /* CubeShaders.metal */,
 			);
 			path = Metal;
 			sourceTree = "<group>";
@@ -389,18 +401,22 @@
 				A61D36B424991F9A00C211E7 /* DrawShapeShader.metal in Sources */,
 				A61D36C5249A1A1F00C211E7 /* MetaKitDrawShapeView.swift in Sources */,
 				A6D349032495249400BFF9EA /* InnerFilterIndexViewController.swift in Sources */,
+				A61D36CF249B5DEF00C211E7 /* MyVertexModel.swift in Sources */,
 				A61D36C0249A19AB00C211E7 /* MetalKitDrawShapeViewController.swift in Sources */,
 				A6D349072495CF6F00BFF9EA /* PhotoAlbumUtil.swift in Sources */,
 				A61D36BB2499245400C211E7 /* GLDrawShapeView.swift in Sources */,
 				A61D36B224991F2C00C211E7 /* MetaDrawShapeView.swift in Sources */,
+				A61D36D1249B5F0F00C211E7 /* CubeShaders.metal in Sources */,
 				A6D3417A249488A200BFF9EA /* AppDelegate.swift in Sources */,
 				A6D348FA249522E200BFF9EA /* StillCameraToLibaryViewController.swift in Sources */,
+				A61D36CD249B5B5700C211E7 /* MetaRotatingCubeView.swift in Sources */,
 				A61D36A9249914DC00C211E7 /* MetaDrawShapeViewController.swift in Sources */,
 				A6D349012495244C00BFF9EA /* filterOperations.swift in Sources */,
 				A61D36B9249923D100C211E7 /* GLDrawShapeViewController.swift in Sources */,
 				A61D36C7249A1A9700C211E7 /* MTKDrawShapeShader.metal in Sources */,
 				A6D348F124951AE900BFF9EA /* DwFilterAdapter.swift in Sources */,
 				A6D348F52495201A00BFF9EA /* ExposureViewController.swift in Sources */,
+				A61D36CB249B5B2D00C211E7 /* MetaRotatingCubeViewController.swift in Sources */,
 				A6D3417C249488A200BFF9EA /* SceneDelegate.swift in Sources */,
 				A6D348F324951F2300BFF9EA /* BrightnessViewController.swift in Sources */,
 			);
